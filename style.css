@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2? família = Inter & display=swap');
+
+*:root {
+    --cor-primaria: #F3F5FC;
+    --cor-secundaria:#0A3871;
+    --cor-terciaria: #495057;
+}  
+
+   
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Arial';
+}
+
+.body {
+    background-color: #558d9e;
+    /* background-color: var(--cor-primaria); */
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 10%;
+    height: 720px;
+}
+
+.saida {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    width: 35%;
+    background-color: var(--cor-primaria);
+    border-radius: 32px;
+}
+
+#mensagemNaoEncontrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    gap: 3%;
+}
+
+.sem-mensagem {
+    height: auto;
+    width: 75%;
+}
+
+.h1SemMensagem {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.pSemMensagem {
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+#textoSaida {
+    font-size: 1.5rem;
+    width: 100%;
+    word-wrap: break-word;
+    padding: 5%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#textoEntrada {
+    color: var(--cor-secundaria);
+    font-size: 2.0rem;
+    height: 90%;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.aviso {
+    color: var(--cor-terciaria);
+    font-size: 0.75rem;
+    margin: 2% 0%;
+    text-align: start;
+}
+
+.avisoImg {
+    width: 12px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+}
+
+.botao {
+    width: 45%;
+    text-align: center;
+    border-radius: 24px;
+    background-color: none;
+    border-color: var(--cor-secundaria);
+    color: var(--cor-secundaria);
+    cursor: pointer;
+    font-size: 1.0rem;
+    box-shadow: 0 10px #999;
+} 
+
+#criptografar {
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria); 
+}
+
+#copiar {
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);    
+    width: 80%;
+    height: 10%;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .entrada {
+        width: 100%;
+        height: 100%;
+    }
+
+    .saida {
+        height: auto;
+        width: 100%;
+    }
+
+    #mensagemNaoEncontrada {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .sem-mensagem {
+        display: none;
+    }
+
+    #mensagemNaoEncontrada {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #copiar {
+        width: 100%;
+        height: 67px;        
+    }
+}
+
+.rodape {
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: 'Inter', 'Arial';
+    font-size: 1.0rem;
+    font-weight: 400;
+}
+
+@media (max-width: 375px) {
+    main {
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .entrada {
+        width: 100%;
+        height: 100%;
+    }
+
+    .saida {
+        height: auto;
+        width: 100%;
+    }
+
+    #mensagemNaoEncontrada {
+        height: 100%;
+        width: 100%;
+        padding: 10%;
+    }
+
+    .sem-mensagem {
+        display: none;
+    }
+
+    #mensagemNaoEncontrada {
+        height: fit-content;
+        width: 100%;
+    }
+
+    #copiar {
+        width: 100%;
+        height: 67px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
+        gap: 20px;
+    }
+
+    #criptografar, #descriptografar {
+        width: 100%;
+        height: 100%;
+    }
+}
